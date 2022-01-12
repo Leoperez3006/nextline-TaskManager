@@ -12,7 +12,7 @@
                 {{dat}}
             </v-list-item-action>
             <template v-slot:actions >
-                <TaskDetails :id="id"></TaskDetails>
+                <taskDetails :id="id"></taskDetails>
                 <EditTask :id="id" :editTaskFunc="editTaskFunc" > </EditTask>
                 <v-btn
                     icon
@@ -27,6 +27,8 @@
         </v-banner>
     </v-container>
 </template>
+
+
 <script>
 import taskDetails from './Details.vue'
 import EditTask from './EditTask.vue'

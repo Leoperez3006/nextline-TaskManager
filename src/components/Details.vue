@@ -66,7 +66,7 @@
 import axios from 'axios'
 import { config } from '../utils/apiData'
 export default{
-    name: 'taskDetails',
+    name: 'TaskDetails',
     props:{
         id:{
             type: Number
