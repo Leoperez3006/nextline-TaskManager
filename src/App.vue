@@ -1,32 +1,45 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+  <v-app>
+    <v-app-bar
+      app
+      color="#405664"
+      dark
+    >
+      <div class="d-flex align-center">
+        <h1
+          class="shrink mt-1 hidden-sm-and-down"
+          contain> Task Manager</h1>
+      </div>
+    </v-app-bar>
+
+    <v-main class="page">
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
+export default {
+  name: 'App',
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+  data: () => ({
+    //
+  }),
+};
+</script>
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<style scoped>
+  .page{
+    padding-top: 2%;
+    padding-right: 3%;
+    padding-left: 3%;
+    background: url("./assets/waves.svg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
   }
-}
 </style>
