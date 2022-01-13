@@ -1,5 +1,9 @@
 # task-manager
 
+## Coments
+Some of the features of the application are not implemented. 
+I could not connect all the endpoints because the documentation given was poor
+
 ## Project setup
 ```
 npm install
